@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Learn more about the GreenCare organization, our goals, and how to get in touch." />
+  <meta name="keywords" content="about GreenCare, organization, goals, contact" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenCare | About Us</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+  <!-- Header & Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">GreenCare</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="tips.html">Tips</a></li>
+        <li><a href="stories.html">Stories</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-banner">
+    <h1 class="section-title">About GreenCare</h1>
+    <p class="section-subtitle">
+      Discover who we are, our vision, and how you can reach out or get involved.
+    </p>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Introduction -->
+    <section class="about-us fade-in">
+      <h2>Introduction</h2>
+      <p>
+        GreenCare started as a simple idea: to make caring for small indoor plants 
+        accessible and enjoyable for everyone. Over the years, we’ve grown into a diverse, global 
+        community of plant lovers, horticulturists, and hobbyists who share a passion 
+        for nurturing green life in every living space.
+      </p>
+      <p>
+        We firmly believe that even a single potted plant can make a big difference in one's 
+        mood, air quality, and sense of connection to nature. Our platform hosts an ever-expanding 
+        library of plant categories, care tips, and real-life stories that highlight the personal 
+        transformations people experience when they bring a bit of green into their routine.
+      </p>
+    </section>
+
+    <!-- Goals & Mission -->
+    <section class="about-us fade-in">
+      <h2>Our Goals & Mission</h2>
+      <ul style="list-style: disc; margin-left: 1.5rem;">
+        <li><strong>Educate:</strong> Provide detailed resources and practical tips on how to nurture different indoor plants, catering to various skill levels.</li>
+        <li><strong>Inspire:</strong> Encourage people to explore sustainable, eco-friendly living by sharing success stories and creative plant setups.</li>
+        <li><strong>Connect:</strong> Foster a supportive community where members can share experiences, ask questions, and learn from each other’s plant journeys.</li>
+        <li><strong>Empower:</strong> Show that a greener lifestyle is within everyone’s reach, regardless of space, budget, or expertise.</li>
+      </ul>
+      <p>
+        By achieving these goals, GreenCare envisions a world where individuals grow more confident 
+        in their ability to care for living things, fostering an appreciation for nature that extends beyond the home.
+      </p>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-details fade-in">
+      <h2>Contact Us</h2>
+      <p>
+        Whether you have questions about plant care, want to share feedback, or look for collaboration opportunities, 
+        we’d love to hear from you!
+      </p>
+      <ul>
+        <li><strong>Email:</strong> info@greencare.org</li>
+        <li><strong>Phone:</strong> +1 (123) 456-7890</li>
+        <li><strong>Address:</strong> 123 Green Street, Plant City, PC 45678</li>
+      </ul>
+      <p>
+        If you'd like to see more real-time updates, join our social media community:
+      </p>
+      <ul>
+        <li><strong>Instagram:</strong> <a href="#" target="_blank">@GreenCareOfficial</a></li>
+        <li><strong>Facebook:</strong> <a href="#" target="_blank">GreenCare Community</a></li>
+        <li><strong>Twitter:</strong> <a href="#" target="_blank">@GreenCareTweets</a></li>
+      </ul>
+    </section>
+
+    <!-- Inquiry Form -->
+    <section class="contact-form fade-in">
+      <h2>Get in Touch</h2>
+      <p>
+        For specific inquiries or partnership requests, send us a message through the form below. 
+        We’ll respond as soon as we can.
+      </p>
+      <form id="contact-form" onsubmit="return false">
+        <div class="form-group">
+          <label for="contactName">Name:</label>
+          <input type="text" id="contactName" name="contactName" required />
+        </div>
+        <div class="form-group">
+          <label for="contactEmail">Email:</label>
+          <input type="email" id="contactEmail" name="contactEmail" required />
+        </div>
+        <div class="form-group">
+          <label for="contactMessage">Message:</label>
+          <textarea id="contactMessage" name="contactMessage" rows="5" required placeholder="Let us know how we can help or collaborate..."></textarea>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+      <p id="contact-message" class="success-message" style="display: none;">
+        Thank you for reaching out! We will get back to you soon.
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 GreenCare. All rights reserved.</p>
+    <p>Together, let's cultivate a greener tomorrow.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

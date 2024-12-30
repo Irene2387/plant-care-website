@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Read and share personal plant stories, successes, and lessons learned." />
+  <meta name="keywords" content="plant stories, user submissions, community" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenCare | Stories</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+  <!-- Header & Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">GreenCare</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="tips.html">Tips</a></li>
+        <li><a href="stories.html" class="active">Stories</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-banner">
+    <h1 class="section-title">Community Plant Stories</h1>
+    <p class="section-subtitle">
+      Discover real-life experiences from fellow plant enthusiasts and share your own journey.
+    </p>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Featured Stories -->
+    <section class="story-section">
+      <h2 class="section-title">Featured Stories</h2>
+
+      <article class="story-card fade-in">
+        <h3>My First Succulent Triumph</h3>
+        <p><strong>By:</strong> Alex</p>
+        <p>
+          I bought a small Echeveria on a whim, assuming all it needed was sunshine. 
+          Turns out, I still managed to overwater it! After watching YouTube videos and reading GreenCare tips, 
+          I repotted it in a gritty mix, watered sparingly, and placed it near a bright window. 
+          Two months later, it not only survived but produced tiny offsets around the base!
+        </p>
+      </article>
+
+      <article class="story-card fade-in">
+        <h3>Office Makeover with Pothos</h3>
+        <p><strong>By:</strong> Jamie</p>
+        <p>
+          My windowless office felt dull and lifeless. I introduced a few golden pothos cuttings 
+          and hung them near the fluorescent light fixture. Over time, they grew long vines and 
+          instantly transformed the sterile environment into a cozy workspace. Everyone in the office 
+          loves it now, and we often swap cuttings to spread the greenery!
+        </p>
+      </article>
+
+      <article class="story-card fade-in">
+        <h3>Dealing with a Persistent Pest</h3>
+        <p><strong>By:</strong> Morgan</p>
+        <p>
+          Fungus gnats invaded my beloved collection of herbs. It was frustrating to see them 
+          swarm around! Thanks to neem oil drench and sticky traps, I gradually got them under control. 
+          I also learned the importance of letting the topsoil dry out thoroughly. Big lesson: 
+          Overwatering can open the door to unwanted pests.
+        </p>
+      </article>
+    </section>
+
+    <!-- Submission Form -->
+    <section class="submission-form fade-in">
+      <h2>Share Your Story</h2>
+      <form id="story-form" onsubmit="return false">
+        <div class="form-group">
+          <label for="storyName">Name (optional):</label>
+          <input type="text" id="storyName" name="storyName" placeholder="Enter your name" />
+        </div>
+        <div class="form-group">
+          <label for="storyTitle">Title:</label>
+          <input type="text" id="storyTitle" name="storyTitle" placeholder="Title of your story" required />
+        </div>
+        <div class="form-group">
+          <label for="storyContent">Your Story:</label>
+          <textarea id="storyContent" name="storyContent" rows="5" placeholder="Share your plant journey..." required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="storyImage">Upload an Image (optional):</label>
+          <input type="file" id="storyImage" name="storyImage" accept="image/*" />
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+      <p id="submission-message" class="success-message" style="display: none;">
+        Thank you for sharing your story!
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 GreenCare. All rights reserved.</p>
+    <p>We grow together by sharing experiences.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
